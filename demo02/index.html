@@ -1,0 +1,26 @@
+<!-- JSX语法 -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>demo</title>
+	<script src="../build/react.js"></script>
+	<script src="../build/react-dom.js"></script>
+	<script src="../build/browser.min.js"></script>
+</head>
+<body>
+<div id="exp"></div>
+<script type="text/babel">
+	var names = ['Tom', 'Jerry', 'Kate'];
+	ReactDOM.render(
+		<div>
+			{
+				names.map(function(name) {
+					return <div>Hello, {name}!</div>
+				})
+			}
+		</div>,
+		document.getElementById('exp')
+	);
+</script>
+</body>
+</html>
